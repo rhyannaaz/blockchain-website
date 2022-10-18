@@ -1,0 +1,434 @@
+/*
+author: Rhyanna Arisya;
+created: 14/4/2021;
+description: css for assign3
+*/
+
+* {
+	color: #293241; /* Initialize the color for all texts */  
+}
+
+html {
+    background-color: #edf2f4;
+    overflow-x: hidden; /* To disable horizontal scroll bar */ 
+}
+
+/*Puts image in the middle of the page and resizes*/
+.mainpg {
+    background: url(images/bg.png) no-repeat center center fixed; 
+    background-size: cover; /* Fit background image to the cover */ 
+}
+
+.menu {
+    background-color: #D8E3FD;
+}
+
+h1 {
+    margin-left: 2%;
+    margin-top: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+h2 {
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    margin-top: 1%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+    margin-top: -1%;
+}
+
+ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-top: 1%;
+}
+
+#home {
+    position: absolute;
+    top: 10px;
+    right: 0%;
+    padding: 5px;
+    margin-right: 410px;
+    margin-top: 2%;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#topic {
+    position: absolute;
+    top: 10px;
+    right: 0%;
+    padding: 5px;
+    margin-right: 310px;
+    margin-top: 2%;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#quiz {
+    position: absolute;
+    top: 10px;
+    right: 0%;
+    padding: 5px;
+    margin-right: 220px;
+    margin-top: 2%;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#manage {
+    position: absolute;
+    top: 10px;
+    right: 0%;
+    padding: 5px;
+    margin-right: 90px;
+    margin-top: 2%;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#starpng {
+    position: absolute;
+    top: 10px;
+    right: 0%;
+    margin-right: 40px;
+    margin-top: 2%;
+    width: 35px;
+}
+
+#logoutbtn {
+    top: 14%;
+    right: 6%;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #546DED;
+    color: white;
+    padding: 6px;
+    width: 80px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#home:after, #topic:after, #quiz:after, #manage:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 5px;
+    opacity: 0;
+	transition: opacity 0.35s, transform 0.35s; /* Underline effect */ 
+	transform: scale(0,1);
+}
+
+#home:hover:after, #topic:hover:after, #quiz:hover:after, #manage:hover:after {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.index {
+	text-decoration: none;
+}
+
+.email {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.email:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 5px;
+    opacity: 0;
+	transition: opacity 0.35s, transform 0.35s; /* Underline effect */ 
+	transform: scale(0,1);
+}
+
+.email:hover:after {
+	opacity: 1;
+	transform: scale(1);
+	transform: scale(1);
+}
+
+footer {
+    display: block;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.briefintro {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 2%;
+    margin-right: 60%;
+    margin-top: 5%;
+}
+
+#blockchainlogo {
+    height: 40px;
+}
+
+#mainpgfooter {
+	display: block;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+
+#bgcredit {
+    font-size: 14px;
+}
+
+#managenav {
+    margin-top:  5%;
+}
+
+.sidenav {
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    margin-top: 2%;
+    left: 1%;
+    background: #edf2f4;
+    overflow-x: hidden;
+    padding: 8px 0;
+
+}
+
+.sidenav a {
+    padding: 8px 10px 8px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #546DED;
+}
+
+.quiz {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+section {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+#blockchaingrowth {
+    width: 720px;
+}
+
+#bitcoinwhitepaper {
+    height: 250px;
+}
+
+#bitcoinwhitepapertitle {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 1%;
+}
+
+#relatedtechpng {
+    width: 850px;
+}
+
+aside {
+    width: 25%;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    float: right;
+    border: 1px solid #293241;
+    background-color: #e0f2f9;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.centeralign {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+th {
+    background-color: #D8E3FD;
+}
+
+td {
+    background-color: #e0f2f9;
+}
+
+ol {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.quizalign {
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 1%;
+    width: 25%;
+}
+
+input[type="password"] {
+    padding: 1%;
+    width: 25%;
+}
+
+legend {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: -1%;
+    margin-bottom: 1%;
+}
+
+input[type="reset"] {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    background-color: #546DED;
+    color: white;
+    padding: 6px;
+    width: 14%;
+    margin-top: 2%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type="submit"] {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    background-color: #546DED;
+    color: white;
+    padding: 6px;
+    width: 14%;
+    margin-top: 2%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#attemptbtn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #546DED;
+    color: white;
+    padding: 6px;
+    width: 25%;
+    margin-top: 2%;
+    margin: auto;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type="reset"]:hover, input[type="submit"]:hover, #attemptbtn:hover, #logoutbtn:hover {
+    opacity: 0.6;
+
+}
+
+input, textarea, select {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+#submitquizbtn {
+    margin-left: 70%;
+}
+
+#fheight {
+    height: 380px;
+}
